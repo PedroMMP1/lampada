@@ -1,0 +1,61 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    margin-top: 50px;
+    flex-direction: column;
+}
+#btn{
+
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #178fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 155px;
+}
+
+#btn:hover{
+    animation: shake 0.6s infinite;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
+}
+
+.lightoff {
+    background-color: black;
+    transition: background-color 3s ease-out;
+  }
+  
+  .lighton { 
+    background-color: rgb(230, 187, 0);
+    transition: background-color 3s ease-out;
+  } 
